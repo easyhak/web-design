@@ -1,0 +1,40 @@
+* {
+    margin: 0; padding: 0; 
+    font-family: "맑은 고딕"; list-style: none;
+}
+a {
+    text-decoration: none; display: block; color: #333333;
+}
+.clearfix::before, .clearfix::after {
+    content: ""; display: block; clear: both;
+}
+
+body {
+    width: 1000px; color: #333333; font-size: 20px;
+}
+
+header {
+    width: 200px; height: 650px; float: left
+}
+.top {
+    width: 200px; height: 650px; float: left;
+}
+.logo {
+    width: 200px; height: 100px; float: left;
+}
+.logo img {
+    margin-top: 30px;
+}
+.menu {
+    width: 200px; height: 550px; float: left; position: relative;
+}
+.navi {
+    margin-left: 10px; margin-right: 10px; position: relative;
+}
+.navi li a {
+    text-align: center; height: 40px; line-height: 40px; width: 180px;
+    background: #547;
+}
+.submenu {
+    position: absolute; left: 180px; top: 0px; display: none;
+}

@@ -1,0 +1,173 @@
+* {
+    margin: 0 auto; padding: 0; list-style: none;
+    font-family: "맑은 고딕"
+}
+a {
+    display: block; text-decoration: none;
+}
+.clearfix::before, .clearfix::after {
+    display: block; content: ""; clear: both;
+}
+body {
+    width: 1200px; font-size: 20px; background: #fff;
+}
+
+header {
+    width: 1200px; height: 100px;
+}
+.top {
+    width: 1200px; height: 100px;
+}
+.logo {
+    width: 200px; height: 100px; float: left;
+}
+.menu {
+    width: 1000px; height: 100px; float: right;
+}
+.navi {
+    float: right; margin-top: 30px; margin-right: 30px; position: relative;
+    z-index: 1;
+}
+.navi>li {
+    float: left;
+}
+.navi>li a {
+    width: 130px; height: 35px; font-size: 18px; color: #fff;
+    text-align: center; line-height: 35px; font-weight: bold;
+}
+.navi>li>a {
+    background: #813232;    
+}
+.navi>li>a:hover {
+    background: #642424;
+}
+.submenu {
+    display: none;
+}
+.submenu>li>a {
+    background: #904b44;
+}
+.submenu>li>a:hover {
+    background: #784327;
+}
+section {
+    width: 1200px; height: 500px;
+}
+.imgslide {
+    width: 1200px; height: 300px; overflow: hidden;
+}
+.slidewrap {
+    width: 1200px; height: 300px; position: relative;
+}
+.slidewrap a {
+    position: relative;
+}
+.slidewrap a .imgtext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); 
+    width: 200px; height: 40px; line-height: 40px; color: #fff; background: rgba(40,40,40,0.7);
+    text-align: center; font-weight: bold;
+}
+
+.contents {
+    width: 1200px; height: 200px;
+}
+.notice {
+    width: 390px; height: 190px; margin-top:5px;float: left; position: relative;
+    border: 1px solid #ccc;
+}
+.notice>a {
+    width: 100px; float: left; color: #ccc; border: 1px solid #ccc;
+    height: 40px; line-height: 40px; text-align: center; font-weight: bold;
+    font-size: 22px; border-left: none; border-bottom: none; border-top: none;
+}
+.notice>a:hover {
+    background: #888;
+}
+.notice ul {
+    position: absolute; top: 40px; width: 380px; border-top: 1px solid #ccc;
+} 
+.notice li {
+    margin-top: 5px; font-size: 16px;
+}
+.notice li a{
+     color: #ccc;
+}
+.notice li a:hover {
+    color: #000;
+}
+.gallery {
+    width: 390px; height: 190px; margin-top: 5px; border: 1px solid #ccc;
+    position: relative; float: left;
+}
+.gallery>a{
+    width: 100px; float: left; color: #ccc; border: 1px solid #ccc;
+    height: 40px; line-height: 40px; text-align: center; font-weight: bold;
+    font-size: 22px; border-left: none; border-bottom: none; border-top: none;
+    background: #888;
+}
+.gallery>a:hover {
+    background: #fff;
+}
+.gallery ul {
+    position: absolute; top: 40px; border-top: 1px solid #ccc; width: 390px;
+}
+.gallery ul li {
+    float: left; margin-left: 5px; margin-right: 10px; margin-top: 25px;
+}
+.gallery ul li img:hover {
+    opacity: 0.5;
+}
+
+.banner {
+    width: 390px; height: 190px; margin-top: 5px; float: right; position: relative;
+}
+.banner a:hover {
+    opacity: 0.5
+}
+.banner img {
+    width: 390px; height: 190px;
+}
+.banner .bntext {
+    position: absolute; left: 50%; top: 50%; text-align: center; width: 200px;
+    height: 50px; line-height: 50px; font-size: 25px; color: #fff; background: rgba(40,40,40,0.7);
+    transform: translate(-50%,-50%); font-weight: bold;
+}
+#layer {
+    display: none;
+}
+#layer.active {
+    display: block;
+}
+#layer .up {
+    width: 550px; height: 300px; position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%,-50%); background: #fff; z-index: 2;
+}
+#layer .uptitle {
+    border-bottom: 1px solid #ccc; 
+}
+#layer .uptitle h1 {
+    font-size: 25px; font-weight: bold; margin-left: 5px;
+}
+#layer .btn {
+    position: absolute; right: 10px; bottom: 10px; background: #ccc;
+    cursor: pointer; width: 50px; text-align: center;
+}
+#layer .btn:hover {
+    background: rgba(0,0,0,0.7); color: #ddd;
+}
+footer {
+    width: 1200px; height: 100px;
+}
+.bottom {
+    width: 1200px; height: 100px;
+}
+.btlogo {
+    width: 200px; height: 100px; float: left; background: #123;
+}
+.copy {
+    width: 800px; height: 100px; float: left; background: #857;
+    color: #ccc; text-align: center; line-height: 180px; font-size: 15px;
+}
+.sns {
+    width: 200px; height: 100px; float: left; background: #0f5;
+}

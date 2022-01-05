@@ -1,0 +1,227 @@
+* {
+    margin: 0 auto; padding: 0; list-style: none;
+    color: #222328; font-family: "맑은 고딕";
+}
+a {
+    display: block; text-decoration: none;
+}
+.clearfix::before, .clearfix::after {display: block; content: ""; clear: both;}
+body {
+    width: 1000px; background: #ffffff;
+    font-size: 20px;
+}
+
+header {
+    float: left; 
+    position: absolute;
+}
+header .top {
+    float: left; height: 650px; width: 200px;
+    background: #eeeeee;
+}
+header .top .logo {
+    float: left; height: 40px; width: 200px; 
+    margin-bottom: 30px; margin-top: 30px;
+}
+header .top .menu {
+    width: 180px;
+    top: 100px;
+    left: 10px;
+    position: absolute; text-align: center; z-index: 1;
+}
+header .top .menu .navi > li {
+    width: 180px; display: block;
+}
+header .top .menu .navi>li a{
+    height: 40px; width: 180px; line-height: 40px;
+    font-size: 16px; font-weight: bold;
+    background: #222328; color: #ffffff;
+}
+header .top .menu .submenu {
+    float: left; width: 180px; height: 100%; left: 180px;
+    top: 0px; position: absolute; background: #cccccc;
+    display: none; z-index: 1;
+}
+header .top .menu .submenu>li>a{
+    font-size: 14px; font-weight: bold; background: #cccccc;
+    color: #ffffff;
+}
+header .top .menu .submenu>li>a:hover {
+    background: #999999; color: #ffff00;
+}
+header .top .menu .navi>li>a:hover {
+    background: #930930; color: #ffff00;
+}
+.bodywrap {
+    float: right; 
+    height: 550px; width: 800px;
+}
+.bodywrap .imageslide {
+    height: 350px; width: 800px;
+    position: relative;
+}
+.bodywrap .imageslide a {
+    position: absolute; left: 0; top: 0; 
+    overflow: hidden; 
+}
+.bodywrap .imageslide a .imgtext {
+    height: 50px; width: 300px; position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%,-50%);
+    text-align: center; background: rgba(40,40,40,0.5);
+    color: #ffffff; font-weight: bold; line-height: 50px;
+}
+.bodywrap .contents {
+    float: right; height: 200px; width: 800px;
+    position: absolute;
+}
+.bodywrap .contents .tabmenu {
+    float: left; height: 180px; width: 290px;
+    margin-top: 10px; margin-bottom: 10px; margin-left: 5px;
+    
+}
+.bodywrap .contents .tabmenu>li {
+    float: left; width: 80px; line-height: 30px;
+    
+}
+.bodywrap .contents .tabmenu>li>a {
+    font-size: 14px; text-align: center;background: #cccccc;
+    border: 1px solid #dddddd; border-bottom: none;
+}
+.bodywrap .contents .tabmenu>li>a:hover{
+    background: #eeeeee;
+}
+.bodywrap .contents .tabmenu .active>a{
+    background: #ffffff;
+}
+.bodywrap .contents .tabmenu li div {
+    position: absolute;  left: 5px; height: 0;
+    overflow: hidden;
+}
+.bodywrap .contents .tabmenu>li.active div {
+    width: 288px; height: 148px; 
+    z-index: 1;  
+}
+.notic ul {
+    float: left; width: 288px; margin-top: 12px; margin-bottom: 12px; 
+}
+.notice li {
+    height: 32px; line-height: 32px; font-size: 13px; 
+    margin: 0 10px
+}
+.notice li:nth-child(2n){
+    background: #cccccc;
+}
+.notice li span {
+    float: right;
+}
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery li {
+    float: left; margin-top: 20px; margin-left: 5px;
+}
+.gallery img {
+    height: 90px; width: 70px; padding: 10px; display: block;
+}
+.gallery img:hover{
+    opacity: 0.5;
+}
+.bodywrap .contents .otherwrap {
+    float: right; height: 180px; width: 500px;
+}
+.bodywrap .contents .otherwrap .banner {
+    position: relative;
+    float: left; height: 180px; width: 295px;
+    margin-top: 10px; margin-bottom: 10px;
+}
+.banner img {
+    float: left; height: 180xp ;width: 295px;
+}
+.banner img:hover {
+    opacity: 0.5;
+}
+.bntext {
+    float: left; height: 40px; width: 100px; position: absolute;
+    text-align: center;
+    line-height: 40px; font-weight: bold; 
+    left: 50%; top: 50%; transform: translate(-50%,-50%);
+    background: rgba(40,40,40,0.3); color: #ffffff;
+}
+.bodywrap .contents .otherwrap .shortcut {
+    position: relative;
+    float: right; height: 180px; width: 200px;
+    margin: 10px 0;
+}
+.shortcut img {
+    width: 200px; height: 180px; float: right;
+}
+.shortcut img:hover {
+    opacity: 0.5;
+}
+.sctext {
+    float: right; height: 40px; width: 100px; position: absolute;
+    text-align: center; color: #ffffff; font-weight: bold;
+    line-height: 40px; background: rgba(40,40,40,0.3);
+    left: 50%; top: 50%; transform: translate(-50%,-50%);
+}
+#modal {
+    width: 100%; height: 100%; position: absolute;
+    left: 0; top: 0; background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1; 
+}
+#modal.active {
+    display: block;
+}
+#modal .modal_up {
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 600px; height: 500px; background: #ffffff;
+}
+#modal .modal_up .uptitle {
+    float: left;
+    width: 600px; height: 50px; text-align: center; line-height: 50px; background: #cccccc;
+}
+#modal .modal_up .upbody {
+    float: left; width: 600px ; height: 400px; margin-left: 10px;
+    margin-top: 10px; 
+}
+#modal .modal_up .btn {
+    float: right; width: 50px; display: block;
+    cursor: pointer;
+}
+footer {
+    float: right; height: 100px; width: 800px;
+}
+footer .bottom {
+    float: left; height: 100px; width: 800px;
+    background: #cccccc;
+    position: absolute;
+}
+footer .bottom .btlogo {
+    float: left; height: 100px; width: 200px;
+}
+.btlogo img {
+    width: 170px; height: 40px; float: left;
+    margin-top; 50px; margin-left: 15px;
+}
+footer .bottom .site {
+    float: right; height: 100px; width: 600px;
+}
+footer .bottom .site .btmenu {
+    height: 50px; width: 600px;
+    text-align: center; font-size: 14px; line-height: 30px;
+}
+.btmenu li {
+    display: inline-block; width: 100px; margin-top: 10px
+}
+.btmenu li:hover {
+    font-weight: bold;
+}
+footer .bottom .site .copy {
+    height: 50px; width: 600px;
+    text-align: center;
+    line-height: 50px;
+}
+
+

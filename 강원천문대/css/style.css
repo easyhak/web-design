@@ -1,0 +1,177 @@
+* {
+    margin: 0 auto; padding: 0; 
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none; display: block
+}
+.clearfix::before, .clearfix::after{
+    clear: both; display: block; content: "";
+}
+body {
+    width: 1200px; font-size: 20px; color: #333;
+}
+header {
+    width: 1200px; height: 100px;
+}
+.top {
+    width: 1200px; height: 100px;
+}
+.logo {
+    float: left; width: 200px; height: 100px; margin-top: 30px;
+}
+.menu {
+    float: left; width: 1000px; height: 100px;
+}
+.navi {
+    float: right; margin-top: 40px; margin-right: 20px; position: relative;
+    z-index: 1;
+}
+.navi>li {
+    float: left; 
+}
+.navi>li a {
+    width: 150px; height: 40px; color: #ccc;
+     text-align: center; line-height: 40px; font-weight: bold;
+}
+.navi>li>a {
+    background: #3856a1;
+}
+.navi>li>a:hover {
+    background: #200a90;
+}
+.submenu {
+    display: none;
+}
+.submenu>li>a{
+    background: #5560f2;
+}
+.submenu>li>a:hover {
+    background: #1822a4;
+}
+section {
+    width: 1200px; height: 500px;
+}
+.imgslide {
+    width: 100%; height: 300px; overflow: hidden;
+}
+.slidewrap {
+    width: 3600px;  height: 300px; position: relative; 
+}
+.slidewrap>a {
+    float: left; 
+}
+.imgslide a {
+    position: relative;
+}
+.slidetext {
+    position: absolute; left: 50%; top: 50%; color: #fff; transform: translate(-50%,-50%);
+    background: rgba(40,40,40,0.5); width: 200px; height: 40px; line-height: 40px; 
+    text-align: center;
+}
+.bodywrap {
+    width: 390px; height: 190px; float: left; position: relative;
+}
+.tabmenu>li {
+    float: left; width: 100px; margin-left: 5px; margin-top: 5px; height: 40px; line-height: 40px;
+}
+.tabmenu>li>a {
+    color: #ccc; text-align: center; border: 1px solid #ccc; background: #888;
+}
+.tabmenu>li>a:hover {
+    color: black; font-weight: bold;
+}
+.active>a {
+    background: #fff !important; color: #ccc;
+}
+.active>div {
+    display: block;
+}
+.notice {
+    position: absolute; display: none;
+}
+.notice li{
+    width: 300px; height: 30px; line-height: 30px; font-size: 16px; margin-top: 5px;
+}
+.notice li:nth-child(2n) {
+    background: #ccc;
+}
+.notice li a {
+    color: #000;
+}
+.notice li a:hover {
+    font-weight: bold;
+}
+.gallery {
+    position: absolute; left: 0px; display: none;
+}
+.gallery li {
+    float: left; margin: 5px;
+}
+.gallery li img:hover {
+    opacity: 0.5;
+}
+
+.otherwrap {
+    width: 800px; height: 200px; float: left;
+}
+.banner {
+    width: 390px; height: 200px; float: left; position: relative; margin-left: 5px;
+}
+.banner img {
+    width: 390px; height: 190px; margin-top: 5px; 
+}
+.bntext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 100px; height: 40px; line-height: 40px; background: rgba(40,40,40,0.5);
+    color: #fff; text-align: center; font-weight: bold;
+}
+.shortcut {
+    position: relative; width: 390px; height: 200px; float: left; margin-left: 5px;
+}
+.shortcut img {
+    width: 390px; height: 190px; margin-top: 5px; 
+}
+.sctext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    background: rgba(40,40,40,0.5); width: 100px; line-height: 40px; height: 40px;
+    text-align: center; font-weight: bold; color: #fff;
+}
+#modal {
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0;
+    background: rgba(40,40,40,0.5); z-index: 2; display: none;
+}
+#modal.active {
+    display: block;
+}
+#modal .up {
+    position: fixed; width: 500px; height: 400px; 
+    left: 50%; top: 50%; transform: translate(-50%,-50%); background: #fff;
+}
+.uptitle {
+    width: 300px; height: 50px; font-size: 26px; font-weight: bold; line-height: 50px;
+    text-align: center; background: #ccc; color: aliceblue; margin-bottom: 5px;
+}
+.btn {
+    width: 50px; height: 40px; text-align: center; position: absolute; bottom: 5px; right: 10px;
+    line-height: 40px; background: #ccc; cursor: pointer; font-weight: bold;
+}
+footer {
+    width: 1200px; height: 100px;
+}
+.btlogo {
+    float: left; width: 200px; height: 100px; background: #888;
+}
+.bottom {
+    float: left; width: 1000px; height: 100px;
+}
+.btmenu {
+    float: left; width: 1000px; height: 50px; background: #666;
+}
+.copy {
+    float: left; width: 1000px; height: 50px; background: #626;
+    color: #fff; text-align: center;
+}
+

@@ -1,0 +1,174 @@
+* {
+    margin: 0; padding: 0; font-family: "맑은 고딕";
+    font-size: 20px; list-style: none;
+}
+a {
+    display: block; text-decoration: none;
+}
+.clearfix::before, .clearfix::after {
+    clear: both; display: block; content: "";
+}
+body {
+    width: 1000px; background: #fff;
+}
+header {
+    width: 200px; height:650px; float: left;
+}
+.top {
+    width: 200px; height: 650px; float: left;
+}
+.logo {
+    width: 200px; height: 100px; float: left;
+}
+.logo img {
+    margin-top: 30px;
+}
+.menu {
+    width: 200px; height: 550px; float: left;
+}
+.navi {
+    float: right; margin-top: 30px;
+}
+.navi li a{
+    width: 190px; height: 35px; text-align: center; line-height: 35px;
+    color: #000; margin-left: 5px; margin-right: 5px; color: #333;
+}
+.navi>li>a {
+    background: #6c8bd3;
+}
+.navi>li>a:hover {
+    background: #4b69a6; color: #ccc;
+}
+.submenu {
+    display: none;
+}
+.submenu>li>a {
+    background: #6cabd3;
+}
+.submenu>li>a:hover {
+    background: #356c8f; color: #ccc;
+}
+
+section {
+    width: 800px; height: 550px; float: right;;
+}
+.imgslide {
+    width: 800px; height: 350px; overflow: hidden;;
+}
+.slidewrap {
+    width: 800px; height: 350px; position: relative;
+}
+.slidewrap a {
+    position: relative;
+}
+.imgtext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 200px; height: 50px; text-align: center; line-height: 50px; font-size: 25px;
+    color: #fff; font-weight: bold;
+}
+.contents {
+    float: left; width: 800px; height: 200px;
+}
+.tabmenu {
+    float: left; width: 350px; height: 190px; margin-top: 5px; position: relative;
+}
+
+.tabmenu>ul>li>a {
+    width: 100px; height: 40px; float: left; color: #ccc; 
+    text-align: center; line-height: 40px;
+}
+.tabmenu>ul>li>a:first-child {
+    border-right: 1px solid #111;
+}
+.notice {
+    position: absolute; top: 50px; display: none;
+}
+.notice li a{
+    color: #ccc; font-size: 16px; margin-top: 8px;
+}
+.gallery {
+    position: absolute; top: 50px; display: none;
+}
+.gallery li {
+    float: left;  margin-top: 5px;  margin-right: 5px;
+}
+.tabmenu .active>a{
+    background: #999;
+}
+.tabmenu .active>div {
+    display: block;
+}
+
+.banner {
+    width: 190px; height: 190px; float: left;margin-top: 5px; position: relative;
+    margin-right: 5px;
+}
+.banner img {
+    width: 190px; height: 190px;
+}
+.banner .bntext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 80px; height: 50px; line-height: 50px; text-align: center; color: #fff;
+    background: rgba(40,40,40,0.5);
+}
+
+.shortcut {
+    width: 250px; height: 190px; float: right; margin-top: 5px; position: relative;
+}
+.shortcut img {
+    height: 250px; height: 190px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+}
+.shortcut .sctext {
+    width: 100px; height: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    color: #fff; text-align: center; line-height: 50px; background: rgba(40,40,40,0.5);
+}
+
+.bottom {
+    width: 800px; height: 100px; float: left;
+}
+.btlogo {
+    width: 200px; height: 100px; float: left;
+}
+.btlogo img {
+    margin-top: 30px;
+}
+.btmenu {
+    width: 600px; height: 50px; float: right;; position: relative;
+}
+.btmenu ul {
+    position: absolute; top: 20px; left: 200px;
+}
+.btmenu li {
+    float: left; 
+}
+.btmenu li a {
+    color: #ccc; font-size: 10px; width: 50px; height: 20px;
+}
+
+.copy {
+    width: 600px; height: 50px; float: left; position: relative;
+}
+.copy h5 {
+    color: #ccc; font-size: 15px; position: absolute; left: 200px; top: 20px;
+}
+#layer {
+    display: none;
+}
+#layer.active {
+    display: block;
+}
+#layer .up {
+    width: 500px; height: 400px; background: #fff; position: fixed;
+    left: 40%; top: 40%; transform: translate(-50%,-50%);
+}
+#layer .uptitle {
+    margin-left: 5px; margin-bottom: 5px; margin-top: 5px;
+    font-weight: bold;
+}
+#layer .upbody {
+    margin-left: 5px; margin-right: 5px;
+}
+#layer .btn {
+    position: absolute; right: 10px; bottom: 10px; 
+    background: rgba(40,40,40,0.8); color: #ccc; cursor: pointer;
+}

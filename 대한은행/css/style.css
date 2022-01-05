@@ -1,0 +1,202 @@
+* {
+    margin: 0 auto; padding: 0; font-family: "맑은 고딕"
+}
+a {
+    display: block; text-decoration: none;
+    color: #ccc;
+}
+li {
+    list-style: none;
+}
+.clearfix::before, .clearfix::after {
+    display: block; clear: both; content: ""; 
+}
+body {
+    width: 1200px; font-size: 20px;
+}
+header {
+    width: 1200px; height: 100px;
+}
+.top {
+    width: 1200px; height: 100px;
+}
+.logo {
+    width: 200px; height: 100px; float: left;
+}
+.logo img {
+    margin-top: 30px;
+}
+.menu {
+    width: 1000px; height: 100px; float: right;
+}
+.navi {
+    float: right; margin-right: 20px; position: relative; z-index: 1;
+}
+.navi > li {
+    float: left; margin-top: 30px;
+}
+.navi > li a {
+    width: 130px; height: 35px; text-align: center;
+    line-height: 35px;
+}
+.navi>li>a {
+    background: #515eb0; 
+}
+.navi>li>a:hover {
+    background: #112287; color: #fff; font-weight: bold;
+}
+.submenu {
+    display: none;
+}
+.submenu>li>a {
+    background: #5281ba;
+}
+.submenu>li>a:hover {
+    background: #22518b; color: #fff; font-weight: bold;
+}
+section {
+    width: 1200px; height: 500px;
+}
+.imgslide {
+    width: 100%; height: 300px;  overflow: hidden;
+}
+.slidewrap {
+    width: 3600px; height: 300px; position: relative;
+}
+.slidewrap>a {
+    position: relative; float: left;
+}
+.slidewrap h2{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    background: rgba(40,40,40,0.5); color: #fff; width: 200px; height: 40px; font-size: 20px;
+    text-align: center; line-height: 40px; font-weight: bold;
+}
+
+.contents {
+    width: 1200px; height: 200px;
+}
+.tabmenu {
+    width: 390px; height: 190px; float: left; margin-top: 5px; position: relative;
+    border: 1px solid #ccc;
+}
+.tabmenu>ul>li {
+    float: left;
+}
+.tabmenu>ul>li>a{
+    width: 100px; height: 35px; line-height: 35px; text-align: center;
+    border: 1px solid #ccc;
+}
+.tabmenu>ul>li>a:hover{
+    font-weight: bold; color: #000;
+}
+.notice {
+    position: absolute; display: none;
+}
+.notice li {
+    margin-top: 10px; 
+}
+.notice li a {
+    font-size: 16px; 
+}
+.notice li a:hover {
+    color: #222;
+}
+.gallery {
+    position: absolute; left: 0; top: 50px; display: none;
+}
+.gallery li {
+    float: left; margin-right: 10px; margin-left: 5px;
+}
+.gallery li img:hover {
+    opacity: 0.5;
+} 
+li.active {
+    background: #555; color: #fff;
+}
+li.active>div {
+    display: block;
+}
+.banner {
+    width: 390px; height: 190px; margin-top: 5px; margin-left: 5px; float: left;
+    position: relative;
+}
+.banner img {
+    width: 390px; height: 190px; 
+}
+.banner .bntext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 100px; height: 40px; font-weight: bold; line-height: 40px; text-align: center;
+    color: #fff; background: rgba(40,40,40,0.5);
+}
+.shortcut {
+    width: 390px; height: 190px; float: left; margin-top: 5px; margin-left: 5px;
+    position: relative;
+}
+.shortcut img {
+    width: 390px; height: 190px;
+}
+.shortcut .sctext {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    background: rgba(40,40,40,0.5); color: #fff;  width: 100px; height: 40px;
+    line-height: 40px; text-align: center;  font-weight: bold;
+}
+footer {
+    width: 1200px; height: 100px;
+}
+.btlogo {
+    width: 200px; height: 100px; float: left;
+}
+.btlogo img {
+    margin-top: 30px;
+}
+.btcontents {
+    width: 1000px; height: 100px; float: left;
+}
+.btmenu {
+    width: 1000px; height: 50px; float: left; position: relative;
+}
+.btmenu ul {
+    position: absolute; left: 600px; top: 20px;
+}
+.btmenu li {
+    float: left; left: 400px; margin-right: 10px;
+}
+.btmenu li a {
+    font-size: 15px;
+}
+.btmenu li a:hover{
+    font-weight: bold; color: #111;
+}
+.copy {
+    width: 1000px; height: 50px; float: left; position: relative;
+}
+.copy h5{
+    position: absolute; left: 50%; top: 60%; transform: translate(-50%,-50%);
+    color: #ccc;
+}
+#layer {
+    display: none;
+}
+#layer.active {
+    display: block
+}
+#layer .up {
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 400px; height: 400px; background: #fff; 
+}
+#layer .uptitle {
+    width: 100px; float: left; height: 40px; font-size: 25px; font-weight: bold;
+    text-align: center; line-height: 40px; background: #777; color: #fff;
+    margin-left: 10px; margin-top: 5px;
+}
+#layer .upbody {
+    width: 350px; margin-left: 10px; margin-right: 10px; float: left; margin-top: 10px;
+}
+#layer .btn {
+    position: absolute;
+    width: 50px; height: 50px; bottom: 10px; right: 10px; line-height: 50px; font-weight: bold;
+    text-align: center; line-height: 50px;
+}
+#layer .btn:hover {
+    background: #111; color: #fff;
+}
