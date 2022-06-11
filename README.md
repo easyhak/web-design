@@ -3,7 +3,6 @@
 
 + <a href="https://github.com/easyhak/web-design/blob/master/%EA%B3%B5%EA%B0%9C%EB%AC%B8%EC%A0%9C/A-1.pdf">A-1 JUST 쇼핑몰<a/>  
 + <a href="https://github.com/easyhak/web-design/blob/master/%EA%B3%B5%EA%B0%9C%EB%AC%B8%EC%A0%9C/A-2.pdf">A-2 GREEN 복지재단 - 문제<a/> 
-  - <a href="https://github.com/easyhak/web-design/tree/master/%EC%98%88%EC%A0%9C/GREEN%20%EB%B3%B5%EC%A7%80%EC%9E%AC%EB%8B%A8">실행화면</a>
 + <a href="https://github.com/easyhak/web-design/blob/master/%EA%B3%B5%EA%B0%9C%EB%AC%B8%EC%A0%9C/A-3.pdf">A-3 강원천문대<a/>
 + <a href="https://github.com/easyhak/web-design/blob/master/%EA%B3%B5%EA%B0%9C%EB%AC%B8%EC%A0%9C/A-4.pdf">A-4 유진건설<a/>
 + <a href="https://github.com/easyhak/web-design/blob/master/%EA%B3%B5%EA%B0%9C%EB%AC%B8%EC%A0%9C/B-1.pdf">B-1 대한은행<a/>
